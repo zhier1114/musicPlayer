@@ -1,0 +1,1721 @@
+#header {
+  width: 100vw;
+  display: flex;
+  box-sizing: border-box;
+}
+
+#side {
+  width: 27%;
+  height: 100%;
+  left: 0;
+  background-color: black;
+  display: block;
+  position: fixed;
+}
+
+#main {
+  position: fixed;
+  width: 73%;
+  height: calc(100% - 90px);
+  right: 0;
+  background-color: black;
+  overflow-y: auto;
+}
+
+#sideThumb {
+  display: none;
+}
+
+@media screen and (max-width: 1132px) {
+  #side {
+    display: none;
+  }
+  #sideThumb {
+    display: block;
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: black;
+  }
+  #main {
+    width: calc(100% - 80px);
+  }
+}
+
+/* -----------------上方為大區塊版面設定----------------- */
+/* -----------------下方為sideThumb設定-----------------  */
+
+#thumbHead,
+#thumbMyLibrary {
+  width: calc(100% - 10px);
+  height: 130px;
+  justify-content: center;
+  background-color: rgb(39, 38, 38);
+  margin: 5px;
+  border-radius: 5px;
+}
+
+#thumbHead {
+  margin-top: 15px;
+}
+
+#thumbMyLibrary {
+  /* height: 67%; */
+  height: calc(100% - 240px);
+  position: relative;
+  align-content: center;
+}
+#thumbMyLibraryContainer {
+  height: 100%;
+  overflow: auto;
+  top: 5px;
+}
+
+#thumbMyLibraryContainer::-webkit-scrollbar {
+  display: none;
+}
+
+#thumbMyLibraryButton {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#thumbHead > button,
+#thumbMyLibraryContainer > button {
+  background-color: rgb(39, 38, 38);
+  border-radius: 5px;
+  color: rgb(191, 191, 191);
+  border: 0;
+  font-size: 28px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  margin-left: 2.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#thumbHead > button:hover,
+#thumbMyLibraryButton:hover {
+  color: #fff;
+}
+
+#thumbMyLibrary .thumbPlayList > img {
+  border-radius: 3px;
+  width: 52px;
+  height: 52px;
+}
+
+#thumbMyLibrary .thumbPlayList:hover {
+  background-color: rgb(57, 57, 57);
+}
+
+/* -----------------上方為sideThumb設定----------------- */
+/* -----------------下方為side設定-----------------  */
+
+#sideHead {
+  margin: 15px 15px 5px 15px;
+  background-color: rgb(39, 38, 38);
+  border-radius: 5px;
+}
+
+#sideHead > button {
+  display: flex;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 80px 10px 20px;
+  margin-left: 20px;
+  background-color: rgb(39, 38, 38);
+  color: rgb(191, 191, 191);
+  width: 90%;
+}
+
+#sideHead > button:hover {
+  color: #fff;
+}
+
+#sideMyLibrary {
+  height: calc(100% - 210px);
+  margin: 5px 15px 5px 15px;
+  background-color: rgb(39, 38, 38);
+  border-radius: 5px;
+}
+
+#sideMyLibrary > button {
+  display: flex;
+  width: 90%;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 80px 10px 20px;
+  margin-left: 20px;
+  background-color: rgb(39, 38, 38);
+  color: rgb(191, 191, 191);
+}
+
+#sideMyLibrary > button:hover {
+  color: #fff;
+}
+
+#sideLibraryType {
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  padding: 10px 20px 15px 0px;
+  margin-left: 15px;
+  margin-right: 10px;
+  border-bottom: 1px solid rgb(112, 112, 112);
+}
+
+#sideLibraryType::-webkit-scrollbar {
+  display: none;
+}
+
+#sideLibraryType > .libraryTypeButton {
+  font-size: 14px;
+  white-space: nowrap;
+  margin: 0 0 0 12px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: rgb(86, 86, 86);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+#sideLibraryType > .libraryTypeButton:hover {
+  background-color: rgb(112, 112, 112);
+}
+
+.createPlayList {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(39, 38, 38);
+  padding: 15px 0px;
+}
+
+.createPlayListButton {
+  font-size: 16px;
+  padding: 5px 30px;
+  color: #fff;
+  background-color: rgb(86, 86, 86);
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.createPlayListButton:hover {
+  background-color: rgb(112, 112, 112);
+}
+
+#sidePlayList {
+  height: calc(100% - 180px);
+  overflow: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: block;
+}
+
+#sidePlayList::-webkit-scrollbar {
+  display: none;
+}
+
+button.playList {
+  display: flex;
+  position: relative;
+  width: 96%;
+  padding: 10px;
+  margin-left: 10px;
+  color: #fff;
+  background-color: rgb(39, 38, 38);
+  border: 0;
+  border-radius: 5px;
+}
+
+button.playList:hover {
+  background-color: rgb(57, 57, 57);
+}
+
+button.playList > img {
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px 0.5px rgb(0, 0, 0, 0.3);
+
+  margin-right: 20px;
+  width: 52px;
+  height: 52px;
+}
+button.playList > span:nth-of-type(1) {
+  position: absolute;
+  left: 85px;
+  font-size: 18px;
+}
+button.playList > span:nth-of-type(2) {
+  position: absolute;
+  left: 85px;
+  top: 40px;
+  font-size: 16px;
+  color: rgb(139, 139, 139);
+}
+
+#sideArtistList {
+  height: calc(100% - 180px);
+  overflow: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+  display: none;
+}
+
+#sideArtistList::-webkit-scrollbar {
+  display: none;
+}
+
+button.artistList {
+  display: flex;
+  position: relative;
+  width: 96%;
+  padding: 10px;
+  margin-left: 10px;
+  color: #fff;
+  background-color: rgb(39, 38, 38);
+  border: 0;
+  border-radius: 5px;
+}
+
+button.artistList:hover {
+  background-color: rgb(57, 57, 57);
+}
+
+button.artistList > img {
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 2px 2px 1px 0.5px rgb(0, 0, 0, 0.3);
+  width: 52px;
+  height: 52px;
+}
+button.artistList > span:nth-of-type(1) {
+  position: absolute;
+  left: 85px;
+  font-size: 18px;
+}
+button.artistList > span:nth-of-type(2) {
+  position: absolute;
+  left: 85px;
+  top: 40px;
+  font-size: 16px;
+  color: rgb(139, 139, 139);
+}
+
+/* -----------------上方為side設定----------------- */
+/* -----------------下方為main設定-----------------  */
+
+@media screen and (max-width: 768px) {
+  #mainLogo {
+    display: none;
+  }
+}
+
+#mainHead {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: calc(100% - 15px);
+  height: 100px;
+  margin: 15px 0px 0px 5px;
+  padding-left: 15px;
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(39, 38, 38);
+  position: sticky;
+  top: 15px;
+  z-index: 5;
+}
+
+#mainLogo > img {
+  width: 180px;
+  height: 80px;
+  margin: 10px 0 0 10px;
+  border-radius: 5px;
+}
+
+#mainSearch {
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+  margin: 15px 15px 15px 30px;
+  background-color: rgb(86, 86, 86);
+  border-radius: 5px;
+}
+
+#mainSearch > input {
+  width: 100%;
+  background-color: unset;
+  border: 0;
+  border-radius: 5px;
+}
+
+#mainSearch > input:focus {
+  border: unset;
+  box-shadow: unset;
+  background-color: unset;
+  border-color: unset;
+  color: unset;
+  outline: #fff;
+}
+
+#mainSearch:has(> input:focus) {
+  color: #fff;
+  background-color: #000;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgba(108, 106, 113, 0.5);
+}
+
+#mainSearch > button {
+  background-color: transparent;
+  border: 0;
+  color: rgb(191, 191, 191);
+  font-size: 20px;
+  padding: 5px 10px;
+  margin: 0 15px;
+}
+
+button#memberIcon {
+  background-color: unset;
+  border: 0;
+}
+
+#memberIcon > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#mainType {
+  width: calc(100% - 15px);
+  margin: 0px 0px 0px 5px;
+  padding: 0 20px 10px 30px;
+  background-color: rgb(39, 38, 38);
+  position: sticky;
+  top: 115px;
+  z-index: 5;
+}
+
+#mainTypeButtonContainer {
+  display: flex;
+  align-content: center;
+  height: 50px;
+  overflow: auto;
+}
+
+#mainTypeButtonContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.mainTypeButton {
+  font-size: 14px;
+  white-space: nowrap;
+  height: 33px;
+  margin: 8px 0 0 12px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: rgb(86, 86, 86);
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.mainTypeButton:hover {
+  background-color: rgb(112, 112, 112);
+}
+
+#mainItem {
+  overflow: auto;
+  height: 79.3%;
+  width: calc(100% - 15px);
+  margin: 0px 0px 0px 5px;
+  display: block;
+}
+
+#mainItem::-webkit-scrollbar {
+  display: none;
+}
+
+.mainItemSection {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(39, 38, 38);
+  border: none;
+}
+
+.mainItemSection::-webkit-scrollbar {
+  display: none;
+}
+
+.mainItemSection .mainItemTitle {
+  display: flex;
+  position: relative;
+}
+.mainItemSection .mainItemTitle h3 {
+  color: #fff;
+  padding: 20px 0 0 30px;
+}
+
+.mainItemSection .mainItemTitle .bi {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  font-size: 25px;
+  background-color: unset;
+  color: rgb(112, 112, 112);
+  border: 0;
+}
+
+.mainItemSection .mainItemTitle .bi:nth-of-type(2) {
+  right: 15px;
+}
+
+.mainItemSection .mainItemTitle .bi:hover {
+  color: rgb(191, 191, 191);
+}
+
+.mainItemSection .mainItemCard {
+  width: calc(100% - 40px);
+  display: flex;
+  overflow: auto;
+  gap: 10px;
+  padding: 5px 10px 5px 0px;
+  margin: 0 0 10px 20px;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+  /* background-color: #9569ca; */
+}
+
+.mainItemSection .mainItemCard::-webkit-scrollbar {
+  display: none;
+}
+
+.mainItemSection .mainItemCard .card-body {
+  height: 230px;
+  min-width: 170px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.mainItemSection .mainItemCard .card-body .mainItemPlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: unset;
+  border: 0;
+}
+
+.mainItemSection .mainItemCard .card-body .mainItemPlay img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.mainItemPlay div {
+  width: 80%;
+  display: block;
+  position: relative;
+  align-items: start;
+  justify-content: start;
+  padding-top: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#mainItemSongName {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: #fff;
+  /* margin-left: 10px; */
+}
+
+#mainItemSongArtist {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: rgb(191, 191, 191);
+}
+
+.mainItemSection .mainItemCard .card-body .mainItemPlay i {
+  position: absolute;
+  font-size: 50px;
+  top: 20%;
+  left: 35%;
+  opacity: 0;
+  color: #fff;
+}
+
+.mainItemSection .mainItemCard .card-body .mainItemPlay:hover {
+  border: none;
+  background-color: rgb(57, 57, 57);
+  box-shadow: 1px 1px 4px 1px black 0.5;
+  cursor: pointer;
+}
+
+.mainItemSection .mainItemCard .card-body .mainItemPlay:hover > i {
+  opacity: 1;
+}
+
+.mainItemSection .mainItemCard .card-body .mainItemPlay:hover > img {
+  opacity: 0.7;
+}
+
+#footer {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 5px 5px;
+  padding: 80px 0 10px 0;
+  background-color: rgb(39, 38, 38);
+}
+
+#footer ul {
+  color: #fff;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+#footer li {
+  color: rgb(191, 191, 191);
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+#footer li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.socialMediaIcon {
+  color: rgb(191, 191, 191);
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialMediaIcon a {
+  margin: 5px;
+}
+
+.socialMediaIcon a:link {
+  color: rgb(191, 191, 191);
+}
+
+.socialMediaIcon a:visited {
+  color: rgb(191, 191, 191);
+}
+
+.socialMediaIcon a:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* -----------------上方為main設定----------------- */
+/* -----------------下方為discover設定-----------------  */
+
+#discoverItem {
+  overflow: auto;
+  height: 71vh;
+  width: calc(100% - 15px);
+  margin: 0px 0px 0px 5px;
+  display: none;
+  background-color: aqua;
+}
+
+#discoverItem::-webkit-scrollbar {
+  display: none;
+}
+
+.discoverItemSection {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(39, 38, 38);
+  border: none;
+}
+
+.discoverItemSection .discoverItemTitle {
+  display: flex;
+  position: relative;
+}
+.discoverItemSection .discoverItemTitle h3 {
+  color: #fff;
+  padding: 20px 0 0 30px;
+}
+
+.discoverItemSection .discoverItemTitle .bi {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  font-size: 25px;
+  background-color: unset;
+  color: rgb(112, 112, 112);
+  border: 0;
+}
+
+.discoverItemSection .discoverItemTitle .bi:nth-of-type(2) {
+  right: 15px;
+}
+
+.discoverItemSection .discoverItemTitle .bi:hover {
+  color: rgb(191, 191, 191);
+}
+
+.discoverItemCard {
+  width: calc(100% - 40px);
+  display: flex;
+  overflow: auto;
+  gap: 10px;
+  padding: 5px 10px 5px 0px;
+  margin: 0 0 10px 20px;
+  border-radius: 5px;
+  scroll-behavior: smooth;
+}
+
+.discoverItemCard::-webkit-scrollbar {
+  display: none;
+}
+
+.discoverItemSection .discoverItemCard .card-body {
+  height: 230px;
+  min-width: 170px;
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemPlay {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: unset;
+  border: 0;
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemPlay img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.discoverItemPlay div {
+  width: 80%;
+  display: block;
+  position: relative;
+  align-items: start;
+  justify-content: start;
+  padding-top: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#discoverItemSongName {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: #fff;
+}
+
+#discoverItemSongArtist {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: rgb(191, 191, 191);
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemPlay i {
+  position: absolute;
+  font-size: 50px;
+  top: 20%;
+  left: 35%;
+  opacity: 0;
+  color: #fff;
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemPlay:hover {
+  border: none;
+  background-color: rgb(57, 57, 57);
+  box-shadow: 1px 1px 4px 1px black 0.5;
+  cursor: pointer;
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemPlay:hover > i {
+  opacity: 1;
+}
+
+.discoverItemSection
+  .discoverItemCard
+  .card-body
+  .discoverItemPlay:hover
+  > img {
+  opacity: 0.7;
+}
+
+/* discover藝人欄位 */
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemArtist {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: unset;
+  border: 0;
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemArtist img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.discoverItemArtist div {
+  width: 80%;
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#discoverItemArtist {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  color: #fff;
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemArtist i {
+  position: absolute;
+  font-size: 50px;
+  top: 20%;
+  left: 35%;
+  opacity: 0;
+  color: #fff;
+}
+
+.discoverItemSection .discoverItemCard .card-body .discoverItemArtist:hover {
+  border: none;
+  background-color: rgb(57, 57, 57);
+  box-shadow: 1px 1px 4px 1px black 0.5;
+  cursor: pointer;
+}
+
+.discoverItemSection
+  .discoverItemCard
+  .card-body
+  .discoverItemArtist:hover
+  > i {
+  opacity: 1;
+}
+
+.discoverItemSection
+  .discoverItemCard
+  .card-body
+  .discoverItemArtist:hover
+  > img {
+  opacity: 0.7;
+}
+/* .discoverItemSection .discoverItemCard .card-body span:nth-of-type(1) {
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  bottom: 35px;
+  left: 18px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.discoverItemSection .discoverItemCard .card-body span:nth-of-type(2) {
+  width: 130px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  color: rgb(191, 191, 191);
+}
+
+.discoverItemSection .discoverItemCard .card-body i {
+  position: absolute;
+  font-size: 50px;
+  top: 20%;
+  left: 35%;
+  opacity: 0;
+  color: #fff;
+}
+
+.discoverItemSection .discoverItemCard .card-body:hover {
+  border: none;
+  background-color: rgb(57, 57, 57);
+  box-shadow: 1px 1px 4px 1px black 0.5;
+  cursor: pointer;
+}
+
+.discoverItemSection .discoverItemCard .card-body:hover > i {
+  opacity: 1;
+}
+
+.discoverItemSection:nth-of-type(2) .discoverItemCard .card-body img {
+  border-radius: 50%;
+} */
+
+/* -----------------上方為discover設定----------------- */
+/* -----------------下方為播放列表設定-----------------  */
+
+#nowPlayingList {
+  display: flex;
+  position: fixed;
+  right: 0%;
+  top: 18%;
+  /* bottom: 9.85%; */
+  width: 71.6%;
+  height: 71%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0 10px 0 0;
+  background-color: rgb(39, 38, 38);
+  z-index: 4;
+  justify-content: center;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transform: translateY(120%);
+  opacity: 0;
+  /* visibility: hidden; */
+  /* display: none; */
+}
+
+#nowPlayingList.nowPlayingListVisible {
+  transform: translateY(0%);
+  opacity: 1;
+  /* visibility: visible; */
+}
+
+#nowPlayingList.nowPlayingListHidden {
+  transform: translateY(120%);
+  opacity: 0;
+  /* visibility: hidden; */
+}
+
+#nowPlayingImg {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+#nowPlayingImg > img {
+  width: 70%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+}
+
+#nextPlay {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 10px;
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  #nowPlayingImg {
+    display: none;
+  }
+  #nextPlay {
+    width: 90%;
+  }
+}
+
+.nextPlayContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1px 1px;
+  justify-content: start;
+}
+
+.nextPlayContainer .nextPlay {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  border: 0;
+  border-top: 0.5px solid rgb(191, 191, 191, 0.5);
+  background-color: rgb(39, 38, 38);
+  color: #fff;
+}
+
+.nextPlayContainer .nextPlay i {
+  font-size: 24px;
+  position: absolute;
+  right: 10%;
+  top: 25%;
+  opacity: 0;
+}
+
+.nextPlayContainer:nth-of-type(2) .nextPlay {
+  border-top: 0;
+  border-bottom: 0.5px solid rgb(191, 191, 191, 0.5);
+}
+
+.nextPlayContainer:nth-of-type(4) .nextPlay {
+  border-top: 0;
+}
+
+.nextPlayContainer .nextPlay:hover {
+  background-color: rgb(57, 57, 57);
+}
+
+.nextPlayContainer .nextPlay:hover i {
+  opacity: 1;
+}
+
+.nextPlayContainer .nextPlayImg {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  border-radius: 5px;
+  width: 52px;
+  height: 52px;
+}
+
+.nextPlayContainer span:nth-of-type(1) {
+  position: absolute;
+  font-size: 18px;
+  top: 13%;
+  left: calc(8% + 52px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+}
+
+.nextPlayContainer span:nth-of-type(2) {
+  position: absolute;
+  font-size: 16px;
+  top: 55%;
+  left: calc(8% + 52px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  color: rgb(112, 112, 112);
+}
+
+#currentPlayInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 5px 10px 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+#nextPlayInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+  font-size: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1132px) {
+  #nowPlayingList {
+    width: calc(100% - 95px);
+  }
+}
+
+/* -----------------上方為播放列表設定----------------- */
+/* -----------------下方為新建播放清單彈出視窗設定-----------------  */
+
+#createNewPlayListContainer {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: none;
+}
+
+#createNewPlayListInput {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  padding: 30px 40px;
+  background-color: rgb(39, 38, 38);
+}
+
+#createNewPlayListInput > h2 {
+  color: #fff;
+}
+
+#createNewPlayList {
+  margin-top: 10px;
+}
+
+#createNewPlayListInputText1,
+#createNewPlayListInputText2 {
+  width: 100%;
+  height: 50px;
+  background-color: unset;
+  color: #fff;
+  border: 0;
+  border-bottom: 1px solid rgb(191, 191, 191);
+}
+
+#createNewPlayListInputText1:focus,
+#createNewPlayListInputText2:focus {
+  /* box-sizing: border-box; */
+  background-color: unset;
+  /* border-color: unset; */
+  /* color: unset; */
+  outline: none;
+  border-bottom: 2px solid rgb(120, 76, 170);
+}
+
+#createNewPlayListConfirm {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
+#cancel,
+#confirm {
+  font-size: 20px;
+  white-space: nowrap;
+  margin: 10px;
+  padding: 5px 15px;
+  color: #fff;
+  background-color: rgb(86, 86, 86);
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+#cancel {
+  background-color: unset;
+  border: unset;
+}
+#cancel:hover {
+  background-color: rgb(191, 191, 191, 0.2);
+}
+
+#confirm:hover {
+  background-color: rgb(86, 86, 86, 0.7);
+  color: rgb(255, 255, 255, 0.7);
+}
+
+/* -----------------上方為新建播放清單彈出視窗設定----------------- */
+/* -----------------下方為播放清單內容主版面設定-----------------  */
+#playListInfoContainer {
+  width: calc(100% - 15px);
+  height: calc(100vh - 261px);
+  margin: -4px 0 0 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgb(39, 38, 38);
+  z-index: 3;
+  justify-content: center;
+  display: none;
+  color: #fff;
+}
+
+#playListInfo {
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  overflow: auto;
+}
+
+#playListCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  overflow: auto;
+  gap: 10px 30px;
+}
+
+.playListCard {
+  /* width: 50px; */
+  height: 250px;
+  /* min-width: 170px; */
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.playListCard img {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+}
+
+.playListCard a {
+  text-decoration: none;
+}
+.playListCard a:hover {
+  text-decoration: underline #fff;
+}
+
+.playListSongName {
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  margin: 5px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.playListName2 {
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin: 5px;
+  padding: 0 10px;
+  color: rgb(191, 191, 191);
+}
+
+.playListCard .bi {
+  color: #fff;
+  position: absolute;
+  font-size: 50px;
+  top: 25%;
+  opacity: 0;
+}
+
+.playListCard:hover {
+  border: none;
+  background-color: rgb(57, 57, 57);
+  box-shadow: 1px 1px 4px 1px black 0.5;
+  cursor: pointer;
+}
+
+.playListCard:hover .bi {
+  opacity: 1;
+}
+
+.playListCard:hover img {
+  opacity: 0.7;
+}
+
+/* -----------------上方為播放清單內容主版面設定----------------- */
+/* -----------------下方為藝人主版面設定-----------------  */
+
+#artistInfoContainer {
+  width: calc(100% - 15px);
+  height: calc(100vh - 261px);
+  margin: -4px 0 0 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgb(39, 38, 38);
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  color: #fff;
+}
+
+#artistInfo {
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  overflow: auto;
+}
+
+#artistName {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-left: -20px;
+}
+
+#artistCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  overflow: auto;
+  gap: 10px 30px;
+}
+
+.artistCard {
+  /* width: 50px; */
+  height: 250px;
+  /* min-width: 170px; */
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.artistCard img {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+}
+
+.artistCard a {
+  text-decoration: none;
+}
+.artistCard a:hover {
+  text-decoration: underline #fff;
+}
+
+.artistSongName {
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  margin: 5px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.artistName2 {
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin: 5px;
+  padding: 0 10px;
+  color: rgb(191, 191, 191);
+}
+
+.artistCard .bi {
+  color: #fff;
+  position: absolute;
+  font-size: 50px;
+  top: 25%;
+  opacity: 0;
+}
+
+.artistCard:hover {
+  border: none;
+  background-color: rgb(57, 57, 57);
+  box-shadow: 1px 1px 4px 1px black 0.5;
+  cursor: pointer;
+}
+
+.artistCard:hover .bi {
+  opacity: 1;
+}
+
+.artistCard:hover img {
+  opacity: 0.7;
+}
+
+#goBack {
+  background-color: rgb(39, 38, 38);
+  border: none;
+  color: rgb(191, 191, 191);
+  font-size: 40px;
+}
+
+#goBack:hover {
+  color: #fff;
+}
+
+/* -----------------上方為藝人主版面設定----------------- */
+/* -----------------下方為音樂類型主版面設定-----------------  */
+
+#songStyleContainer {
+  width: calc(100% - 15px);
+  height: calc(100vh - 261px);
+  margin: -4px 0 0 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: rgb(39, 38, 38);
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  color: #fff;
+}
+
+#songStyle {
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  overflow: auto;
+}
+
+#songStyleCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  overflow: auto;
+  gap: 10px 30px;
+}
+
+.songStyleCard {
+  /* width: 50px; */
+  height: 250px;
+  /* min-width: 170px; */
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.songStyleCard img {
+  width: 170px;
+  height: 170px;
+  border-radius: 5px;
+}
+
+.songStyleCard a {
+  text-decoration: none;
+}
+.songStyleCard a:hover {
+  text-decoration: underline #fff;
+}
+
+.artistSongName {
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  margin: 5px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.artistName2 {
+  width: 170px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin: 5px;
+  padding: 0 10px;
+  color: rgb(191, 191, 191);
+}
+
+.songStyleCard .bi {
+  color: #fff;
+  position: absolute;
+  font-size: 50px;
+  top: 25%;
+  opacity: 0;
+}
+
+.songStyleCard:hover {
+  border: none;
+  background-color: rgb(57, 57, 57);
+  box-shadow: 1px 1px 4px 1px black 0.5;
+  cursor: pointer;
+}
+
+.songStyleCard:hover .bi {
+  opacity: 1;
+}
+
+.songStyleCard:hover img {
+  opacity: 0.7;
+}
+
+/* -----------------上方為音樂類型主版面設定----------------- */
+/* -----------------下方為musicBar設定-----------------  */
+
+#musicBar {
+  width: 100vw;
+  height: 90px;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+}
+
+#musicBarInfo {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  align-content: center;
+  display: flex;
+}
+
+#playSong {
+  display: flex;
+  height: 100%;
+  width: 25%;
+  align-items: center;
+  overflow: hidden;
+}
+
+#playSong > img {
+  width: 65px;
+  height: 65px;
+  margin-left: 1.5vw;
+  border-radius: 5px;
+  border: 0;
+}
+
+#playSongInfo {
+  font-size: 18px;
+  margin-left: 5px;
+  width: calc(100% - 90px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  #playSong > img {
+    display: none;
+  }
+
+  #playSongInfo {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
+
+#playSongInfo span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 5px 0 5px;
+}
+
+#playSongInfo span:nth-of-type(1) {
+  margin-top: 18px;
+}
+
+#playSongInfo span:nth-of-type(2) {
+  color: rgb(191, 191, 191);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+#playSongInfo a:nth-of-type(2):visited {
+  color: rgb(191, 191, 191);
+}
+
+#playSongControl {
+  width: 50%;
+}
+
+#playSongControlButton {
+  color: rgb(191, 191, 191);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#playSongControlButton i {
+  font-size: 26px;
+  margin: 6px 1.5vw -2px 1.5vw;
+}
+
+#playSongControlButton i:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+#playSongControlButton i:nth-of-type(3) {
+  font-size: 32px;
+}
+
+#playSongCurrentBar {
+  display: flex;
+  position: relative;
+  color: #fff;
+  height: calc(100% - 55px);
+  justify-content: center;
+  align-items: center;
+}
+
+#currentBarContainer {
+  display: flex;
+  width: 60%;
+  height: 100%;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#currentBar {
+  appearance: none; /* 去掉默認樣式 */
+  outline: none;
+  position: relative;
+  background: #9569ca;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  width: 95%;
+  height: 5px;
+}
+
+#currentBar::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent; /* 透明背景，讓背景圖片顯示 */
+  border-radius: 5px;
+}
+
+#currentBar::-webkit-slider-thumb {
+  -webkit-appearance: none; /* 去掉默認樣式 */
+  width: 15px;
+  height: 15px;
+  background: #9569ca;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px; /* 調整與軌道對齊 */
+  position: relative;
+  z-index: 1;
+  visibility: hidden;
+}
+
+#currentBar:hover#currentBar::-webkit-slider-thumb {
+  visibility: visible;
+}
+
+#currentBar:focus::-webkit-slider-runnable-track {
+  background: transparent; /* 保持透明背景 */
+}
+
+#rightControl {
+  width: 25%;
+  height: 100%;
+  color: rgb(191, 191, 191);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 5px;
+}
+
+#volumeButton {
+  font-size: 32px;
+  margin-right: 1vw;
+  background-color: unset;
+  color: rgb(191, 191, 191);
+  border: 0;
+}
+
+#shuffleButton:hover,
+#repeatButton:hover {
+  color: #fff;
+}
+
+#volumeSetting {
+  display: flex;
+  position: relative;
+  justify-content: right;
+  align-items: center;
+  /* width: 60%; */
+  margin-right: -5px;
+  margin-left: 5px;
+  box-sizing: border-box;
+}
+
+#volumeButton:hover {
+  color: #fff;
+}
+
+#volumeSetting:hover #currentVol {
+  visibility: visible;
+}
+
+#currentVol {
+  appearance: none;
+  outline: none;
+  background: #9569ca;
+  background-size: 100% 100%;
+  border-radius: 5px;
+  width: 70%;
+  height: 8px;
+  margin-right: 5px;
+  visibility: hidden;
+}
+
+#currentVol::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 5px;
+}
+
+#currentVol::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #9569ca;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+  position: relative;
+  z-index: 1;
+}
+
+#currentBar:focus::-webkit-slider-runnable-track {
+  background: transparent;
+}

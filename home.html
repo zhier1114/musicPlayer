@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./home.css">
+    <script src="./_js/bootstrap.bundle.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <div id="sideThumb">
+            <div id="thumbHead">
+                <button id="thumbHomeButton">
+                    <i class="bi bi-house"></i>
+                </button>
+                <button id="thumbDiscoverButton">
+                    <i class="bi bi-eyeglasses"></i>
+                </button>
+            </div>
+            <div id="thumbMyLibrary">
+                <div id="thumbMyLibraryContainer">
+                    <button id="thumbMyLibraryButton">
+                        <i class="bi bi-music-note-list"></i>
+                    </button>
+                    <button class="thumbPlayList">
+                        <img class="sidePlayListImg" src="https://dummyimage.com/52x52/000/fff">
+                    </button>
+                    <button class="thumbPlayList">
+                        <img class="sidePlayListImg" src="https://dummyimage.com/52x52/000/fff">
+                    </button>
+                    <button class="thumbPlayList">
+                        <img class="sidePlayListImg" src="https://dummyimage.com/52x52/000/fff">
+                    </button>
+                    <button class="thumbPlayList">
+                        <img class="sidePlayListImg" src="https://dummyimage.com/52x52/000/fff">
+                    </button>
+                    <button class="thumbPlayList">
+                        <img class="sidePlayListImg" src="https://dummyimage.com/52x52/000/fff">
+                    </button>
+                    <button class="thumbPlayList">
+                        <img class="sidePlayListImg" src="https://dummyimage.com/52x52/000/fff">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="side">
+            <div id="sideHead">
+                <button id="homeButton">
+                    <i class="bi bi-house me-3"></i>
+                    <span>首頁</span>
+                </button>
+                <button id="discoverButton">
+                    <i class="bi bi-eyeglasses me-3"></i>
+                    <span>探索</span>
+                </button>
+            </div>
+            <div id="sideMyLibrary">
+                <button id="myLibraryButton">
+                    <i class="bi bi-music-note-list me-3"></i>
+                    <span>播放列表</span>
+                </button>
+                <div id="sideLibraryType">
+                    <button class="libraryTypeButton" id="openSidePlayList">播放清單</button>
+                    <button class="libraryTypeButton" id="openSideArtistList">藝人</button>
+                    <button class="libraryTypeButton">專輯</button>
+                    <button class="libraryTypeButton">Podcast和節目</button>
+                </div>
+                <div class="createPlayList">
+                    <button class="createPlayListButton" id="createPlayListButton">
+                        <i class="bi bi-plus-lg"></i>&nbsp;新增播放清單
+                    </button>
+                </div>
+                <div id="sidePlayList">
+                    <button class="playList" data-playList="純享受">
+                        <img class="sidePlayListImg" src="./img/6.png">
+                        <span>純享受</span>
+                        <span>我</span>
+                    </button>
+                    <button class="playList" data-playList="工作用">
+                        <img class="sidePlayListImg" src="./img/5.png">
+                        <span>工作用</span>
+                        <span>我</span>
+                    </button>
+                    <button class="playList" data-playList="過年用">
+                        <img class="sidePlayListImg" src="./img/8.png">
+                        <span>過年用</span>
+                        <span>我</span>
+                    </button>
+                    <button class="playList" data-playList="日文流行">
+                        <img class="sidePlayListImg" src="./img/10.png">
+                        <span>日文流行</span>
+                        <span>我</span>
+                    </button>
+                    <button class="playList" data-playList="電死人">
+                        <img class="sidePlayListImg" src="./img/24.png">
+                        <span>電死人</span>
+                        <span>我</span>
+                    </button>
+                    <button class="playList" data-playList="遊戲音樂">
+                        <img class="sidePlayListImg" src="./img/27.png">
+                        <span>遊戲音樂</span>
+                        <span>我</span>
+                    </button>
+                </div>
+                <div id="sideArtistList">
+                    <!-- <button class="artistList" data-artist="Eve">
+                        <img class="sideArtistImg" src="./img/A1.png">
+                        <span>Eve</span>
+                        <span>2 首歌曲</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div id="mainHead">
+                <div id="mainLogo"> <img src="./img/Logo.png" alt="Logo"></div>
+                <div id="mainSearch">
+                    <button><i class="bi bi-search"></i></button>
+                    <input type="text" placeholder="搜尋歌曲、藝人、專輯、Podcast和節目...">
+                </div>
+                <button id="memberIcon"> <img src="https://dummyimage.com/50x50/000/fff" alt=""></button>
+            </div>
+            <div id="mainType">
+                <div id="mainTypeButtonContainer">
+                    <button class="mainTypeButton" data-songStyle="能量">能量</button>
+                    <button class="mainTypeButton" data-songStyle="放鬆">放鬆</button>
+                    <button class="mainTypeButton" data-songStyle="好心情">好心情</button>
+                    <button class="mainTypeButton" data-songStyle="派對">派對</button>
+                    <button class="mainTypeButton" data-songStyle="通勤">通勤</button>
+                    <button class="mainTypeButton" data-songStyle="健身">健身</button>
+                    <button class="mainTypeButton" data-songStyle="浪漫愛情">浪漫愛情</button>
+                    <button class="mainTypeButton" data-songStyle="難過憂愁">難過憂愁</button>
+                    <button class="mainTypeButton" data-songStyle="專注">專注</button>
+                    <button class="mainTypeButton" data-songStyle="睡眠">睡眠</button>
+                </div>
+            </div>
+            <div id="mainItem">
+                <div class="mainItemSection">
+                    <div class="mainItemTitle">
+                        <h3>再聽一次</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="1"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="1"></button>
+                    </div>
+                    <div class="mainItemCard" id="cardSection1">
+                        <div class="main-card card-body">
+                            <!-- <button class="mainItemPlay" data-song-id = "">
+                                <img src="" >
+                                <i class="bi bi-play-circle"></i>
+                                <div>
+                                    <span id="mainItemSongName"></span>
+                                    <span id="mainItemSongArtist"></span>
+                                </div>
+                                </button> -->
+                        </div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                    </div>
+                </div>
+                <div class="mainItemSection">
+                    <div class="mainItemTitle">
+                        <h3>最新發行</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="2"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="2"></button>
+                    </div>
+                    <div class="mainItemCard" id="cardSection2">
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                    </div>
+                </div>
+                <div class="mainItemSection">
+                    <div class="mainItemTitle">
+                        <h3>重溫舊愛</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="3"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="3"></button>
+                    </div>
+                    <div class="mainItemCard" id="cardSection3">
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                    </div>
+                </div>
+                <div class="mainItemSection">
+                    <div class="mainItemTitle">
+                        <h3>推薦專輯</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="4"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="4"></button>
+                    </div>
+                    <div class="mainItemCard" id="cardSection4">
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                    </div>
+                </div>
+                <div class="mainItemSection">
+                    <div class="mainItemTitle">
+                        <h3>舒壓歌曲</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="5"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="5"></button>
+                    </div>
+                    <div class="mainItemCard" id="cardSection5">
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                        <div class="main-card card-body"></div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="footerInfo">
+                        <ul>公司簡介
+                            <li>關於我們</li>
+                            <li>職位空缺</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="footerInfo">
+                        <ul>社群
+                            <li>藝人專屬</li>
+                            <li>開發商</li>
+                            <li>廣告宣傳</li>
+                            <li>投資者</li>
+                            <li>供應商</li>
+                        </ul>
+                    </div>
+                    <div class="footerInfo">
+                        <ul>常用連結
+                            <li>支援</li>
+                        </ul>
+                    </div>
+                    <div class="footerInfo">
+                        <ul>方案選擇
+                            <li>Premium</li>
+                            <li>Duo</li>
+                            <li>Family</li>
+                            <li>Student</li>
+                            <li>Free</li>
+                        </ul>
+                    </div>
+                    <div class="socialMediaIcon">
+                        <a href="https://twitter.com/?lang=zh-Hant" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="discoverItem">
+                <div class="discoverItemSection">
+                    <div class="discoverItemTitle">
+                        <h3>熱門專輯</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="6"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="6"></button>
+                    </div>
+                    <div class="discoverItemCard" id="cardSection6">
+                        <div class="discover-card card-body">
+                            <!-- <button class="discoverItemPlay" data-song-id="">
+                                <img src="https://dummyimage.com/150x150/000/fff">
+                                <i class="bi bi-play-circle"></i>
+                                <div>
+                                    <span id="discoverItemSongName">12342342342</span>
+                                    <span id="discoverItemSongArtist">456555542</span>
+                                </div>
+                            </button> -->
+                        </div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                    </div>
+                </div>
+                <div class="discoverItemSection">
+                    <div class="discoverItemTitle">
+                        <h3>熱門藝人</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="7"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="7"></button>
+                    </div>
+                    <div class="discoverItemCard" id="cardSection7">
+                        <!-- <div class="discover-artist-card card-body">
+                            <button class="discoverItemArtist" data-song-id="">
+                                <img src="https://dummyimage.com/150x150/000/fff">
+                                <div>
+                                    <span id="discoverItemArtist">1234234234qweqewqweqweqwe2</span>
+                                </div>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="discoverItemSection">
+                    <div class="discoverItemTitle">
+                        <h3>熱門音樂</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="8"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="8"></button>
+                    </div>
+                    <div class="discoverItemCard" id="cardSection8">
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                    </div>
+                </div>
+                <div class="discoverItemSection">
+                    <div class="discoverItemTitle">
+                        <h3>熱門電台</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="9"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="9"></button>
+                    </div>
+                    <div class="discoverItemCard" id="cardSection9">
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                    </div>
+                </div>
+                <div class="discoverItemSection">
+                    <div class="discoverItemTitle">
+                        <h3>推薦給你</h3>
+                        <button class="bi bi-arrow-left-circle leftArrow" data-section="10"></button>
+                        <button class="bi bi-arrow-right-circle rightArrow" data-section="10"></button>
+                    </div>
+                    <div class="discoverItemCard" id="cardSection10">
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                        <div class="discover-card card-body"></div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="footerInfo">
+                        <ul>公司簡介
+                            <li>關於我們</li>
+                            <li>職位空缺</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="footerInfo">
+                        <ul>社群
+                            <li>藝人專屬</li>
+                            <li>開發商</li>
+                            <li>廣告宣傳</li>
+                            <li>投資者</li>
+                            <li>供應商</li>
+                        </ul>
+                    </div>
+                    <div class="footerInfo">
+                        <ul>常用連結
+                            <li>支援</li>
+                        </ul>
+                    </div>
+                    <div class="footerInfo">
+                        <ul>方案選擇
+                            <li>Premium</li>
+                            <li>Duo</li>
+                            <li>Family</li>
+                            <li>Student</li>
+                            <li>Free</li>
+                        </ul>
+                    </div>
+                    <div class="socialMediaIcon">
+                        <a href="https://twitter.com/?lang=zh-Hant" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="playListInfoContainer">
+                <div class="playListInfo" id="playListInfo">
+                    <!-- <h3 class="playListName" id="playListName">純享受</h3>
+                    <div id="playListCard">
+                        <div class="playListCard card-body">
+                            <img src="https://dummyimage.com/150x150/000/fff">
+                            <i class="bi bi-play-circle"></i>
+                            <a class="stretched-link" href="">
+                                <div class="playListSongName">音樂名稱12313123123132qasfs</div>
+                                <div class="playListName2">歌手名稱asdaawdawdawdad</div>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="artistInfoContainer">
+                <div id="artistInfo">
+                    <!-- <h3 id="artistName">歌手名稱</h3>
+                    <div id="artistCard">
+                        <div class="artistCard card-body">
+                            <img src="https://dummyimage.com/150x150/000/fff">
+                            <i class="bi bi-play-circle"></i>
+                            <a class="stretched-link" href="">
+                                <div class="artistSongName">音樂名稱12313123123132qasfs</div>
+                                <div class="artistName2">歌手名稱asdaawdawdawdad</div>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="songStyleContainer">
+                <div id="songStyle">
+                    <!-- <h3 id="songStyleName">音樂類型</h3>
+                    <div id="songStyleCard">
+                        <div class="songStyleCard card-body">
+                            <img src="https://dummyimage.com/150x150/000/fff">
+                            <i class="bi bi-play-circle"></i>
+                            <a class="stretched-link" href="">
+                                <div class="artistSongName">音樂名稱12313123123132qasfs</div>
+                                <div class="artistName2">歌手名稱asdaawdawdawdad</div>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div id="nowPlayingList" class="nowPlayingListHidden">
+                <div id="nowPlayingImg">
+                    <img id="nowPlayingImgJS" src="https://dummyimage.com/500x500/000/fff">
+                </div>
+                <div id="nextPlay">
+                    <div id="currentPlayInfo">
+                        <span>現正播放：</span>
+                    </div>
+                    <div class="nextPlayContainer" id="nextPlayContainer1">
+                        <!-- <button class="nextPlay" data-song-id ="${songNumbers}">
+                            <img class="nextPlayImg" src="${songInfo[songNumbers].poster}">
+                            <span class="nextPlaySong">${songInfo[songNumbers].songName}</span>
+                            <span class="nextPlayArtist">${songInfo[songNumbers].songArtist}</span>
+                            <i class="bi bi-play-circle"></i>
+                            </button> -->
+                    </div>
+                    <div id="nextPlayInfo">
+                        <span>接續播放：</span>
+                    </div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                    <div class="nextPlayContainer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="musicBar">
+        <div id="musicBarInfo">
+            <div id="playSong">
+                <img src="./img/3.png" id="playSongImg">
+                <div id="playSongInfo">
+                    <span id="playSongName"></span>
+                    <span id="playSongArtist"></span>
+                </div>
+            </div>
+            <div id="playSongControl">
+                <div id="playSongControlButton">
+                    <i class="bi bi-shuffle" id="shuffleButton"></i>
+                    <i class="bi bi-skip-backward" id="skipBackward"></i>
+                    <i class="bi bi-play-circle-fill" id="playButton"></i>
+                    <i class="bi bi-skip-forward" id="skipForward"></i>
+                    <i id="repeatButton" class="bi bi-repeat"></i>
+                </div>
+                <div id="playSongCurrentBar">
+                    <span id="currentStart">0:00</span>
+                    <div id="currentBarContainer">
+                        <input id="currentBar" type="range" min="0" max="100" step="0.1">
+                    </div>
+                    <span id="currentEnd">0:00</span>
+                </div>
+            </div>
+            <div id="rightControl">
+                <div id="volumeSetting">
+                    <input type="range" id="currentVol" min="0" max="100" step="1" value="30">
+                    <button id="volumeButton">
+                        <i class="bi "></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="createNewPlayListContainer">
+        <div id="createNewPlayListInput">
+            <h2>新增播放清單</h2>
+            <div id="createNewPlayList">
+                <input type="text" id="createNewPlayListInputText1" placeholder="清單名稱" required>
+                <p></p>
+                <input type="text" id="createNewPlayListInputText2" placeholder="說明" value="我">
+            </div>
+            <div id="createNewPlayListConfirm">
+                <button id="cancel">&nbsp;取消&nbsp;</button>
+                <button id="confirm">&nbsp;新增&nbsp;</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./home.js"></script>
+
+</html>

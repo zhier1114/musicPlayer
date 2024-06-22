@@ -1,0 +1,402 @@
+[
+  {
+    "id": 0,
+    "songName": "KaiKai Kitan",
+    "songArtist": "Eve",
+    "songArtistImg": "./img/A1.png",
+    "songSrc": "./audio/0.webm",
+    "style": "能量",
+    "playList": "日文流行",
+    "poster": "./img/0.png"
+  },
+  {
+    "id": 1,
+    "songName": "怪物",
+    "songArtist": "YOASOBI",
+    "songArtistImg": "./img/A4.png",
+    "songSrc": "./audio/1.webm",
+    "style": "健身",
+    "playList": "純享受",
+    "poster": "./img/1.png"
+  },
+  {
+    "id": 2,
+    "songName": "紅蓮華 - Gurenge",
+    "songArtist": "LiSA",
+    "songArtistImg": "./img/A2.png",
+    "songSrc": "./audio/2.webm",
+    "style": "能量",
+    "playList": "純享受",
+    "poster": "./img/2.png"
+  },
+  {
+    "id": 3,
+    "songName": "打上花火",
+    "songArtist": "Kenshi Yonezu",
+    "songArtistImg": "./img/A9.png",
+    "songSrc": "./audio/3.webm",
+    "style": "放鬆",
+    "playList": "純享受",
+    "poster": "./img/3.png"
+  },
+  {
+    "id": 4,
+    "songName": "One Last Kiss",
+    "songArtist": "Hikaru Utada",
+    "songArtistImg": "./img/A12.png",
+    "songSrc": "./audio/4.webm",
+    "style": "專注",
+    "playList": "日文流行",
+    "poster": "./img/4.png"
+  },
+  {
+    "id": 5,
+    "songName": "inferno",
+    "songArtist": "Mr.Green Apple",
+    "songArtistImg": "./img/A13.png",
+    "songSrc": "./audio/5.webm",
+    "style": "專注",
+    "playList": "工作用",
+    "poster": "./img/5.png"
+  },
+  {
+    "id": 6,
+    "songName": "I'm Invincible",
+    "songArtist": "Ado",
+    "songArtistImg": "./img/A3.png",
+    "songSrc": "./audio/6.webm",
+    "style": "能量",
+    "playList": "純享受",
+    "poster": "./img/6.png"
+  },
+  {
+    "id": 7,
+    "songName": "Ghost In a Flower",
+    "songArtist": "Yorushika",
+    "songArtistImg": "./img/A14.png",
+    "songSrc": "./audio/7.webm",
+    "style": "好心情",
+    "playList": "純享受",
+    "poster": "./img/7.png"
+  },
+  {
+    "id": 8,
+    "songName": "Sugar Song to Bitter Step",
+    "songArtist": "UNISON SQUARE GARDEN",
+    "songArtistImg": "./img/A15.png",
+    "songSrc": "./audio/8.webm",
+    "style": "通勤",
+    "playList": "過年用",
+    "poster": "./img/8.png"
+  },
+  {
+    "id": 9,
+    "songName": "Harunohi",
+    "songArtist": "Aimyon",
+    "songArtistImg": "./img/A5.png",
+    "songSrc": "./audio/9.webm",
+    "style": "放鬆",
+    "playList": "工作用",
+    "poster": "./img/9.png"
+  },
+  {
+    "id": 10,
+    "songName": "Only My Railgun",
+    "songArtist": "fripSide",
+    "songArtistImg": "./img/A16.png",
+    "songSrc": "./audio/10.webm",
+    "style": "能量",
+    "playList": "日文流行",
+    "poster": "./img/10.png"
+  },
+  {
+    "id": 11,
+    "songName": "Zenryoku Syounen",
+    "songArtist": "SUKIMASWITCH",
+    "songArtistImg": "./img/A17.png",
+    "songSrc": "./audio/11.webm",
+    "style": "睡眠",
+    "playList": "日文流行",
+    "poster": "./img/11.png"
+  },
+  {
+    "id": 12,
+    "songName": "Hologram",
+    "songArtist": "NICO Touches the Walls",
+    "songArtistImg": "./img/A18.png",
+    "songSrc": "./audio/12.webm",
+    "style": "派對",
+    "playList": "純享受",
+    "poster": "./img/12.png"
+  },
+  {
+    "id": 13,
+    "songName": "Namae No Nai Kaibutsu",
+    "songArtist": "EGOIST",
+    "songArtistImg": "./img/A6.png",
+    "songSrc": "./audio/13.webm",
+    "style": "難過憂愁",
+    "playList": "純享受",
+    "poster": "./img/13.png"
+  },
+  {
+    "id": 14,
+    "songName": "Rewrite",
+    "songArtist": "亞細亞功夫世代",
+    "songArtistImg": "./img/A19.png",
+    "songSrc": "./audio/14.webm",
+    "style": "通勤",
+    "playList": "日文流行",
+    "poster": "./img/14.png"
+  },
+  {
+    "id": 15,
+    "songName": "夜に駆ける",
+    "songArtist": "YOASOBI",
+    "songArtistImg": "./img/A4.png",
+    "songSrc": "./audio/15.webm",
+    "style": "浪漫愛情",
+    "playList": "純享受",
+    "poster": "./img/15.png"
+  },
+  {
+    "id": 16,
+    "songName": "Odo",
+    "songArtist": "Ado",
+    "songArtistImg": "./img/A3.png",
+    "songSrc": "./audio/16.webm",
+    "style": "能量",
+    "playList": "純享受",
+    "poster": "./img/16.png"
+  },
+  {
+    "id": 17,
+    "songName": "Idol",
+    "songArtist": "YOASOBI",
+    "songArtistImg": "./img/A4.png",
+    "songSrc": "./audio/17.webm",
+    "style": "能量",
+    "playList": "純享受",
+    "poster": "./img/17.png"
+  },
+  {
+    "id": 18,
+    "songName": "Last Stardust",
+    "songArtist": "Aimer",
+    "songArtistImg": "./img/A11.png",
+    "songSrc": "./audio/18.webm",
+    "style": "專注",
+    "playList": "工作用",
+    "poster": "./img/18.png"
+  },
+  {
+    "id": 19,
+    "songName": "Dramaturgy",
+    "songArtist": "Eve",
+    "songArtistImg": "./img/A1.png",
+    "songSrc": "./audio/19.webm",
+    "style": "能量",
+    "playList": "日文流行",
+    "poster": "./img/19.png"
+  },
+  {
+    "id": 20,
+    "songName": "Bling-Bang-Bang-Born",
+    "songArtist": "Creepy Nuts",
+    "songArtistImg": "./img/A20.png",
+    "songSrc": "./audio/20.webm",
+    "style": "能量",
+    "playList": "純享受",
+    "poster": "./img/20.png"
+  },
+  {
+    "id": 21,
+    "songName": "Kataomoi",
+    "songArtist": "Aimer",
+    "songArtistImg": "./img/A11.png",
+    "songSrc": "./audio/21.webm",
+    "style": "浪漫愛情",
+    "playList": "純享受",
+    "poster": "./img/21.png"
+  },
+  {
+    "id": 22,
+    "songName": "たぶん",
+    "songArtist": "YOASOBI",
+    "songArtistImg": "./img/A4.png",
+    "songSrc": "./audio/22.webm",
+    "style": "放鬆",
+    "playList": "純享受",
+    "poster": "./img/22.png"
+  },
+  {
+    "id": 23,
+    "songName": "BETELGEUSE",
+    "songArtist": "Yuuri",
+    "songArtistImg": "./img/A10.png",
+    "songSrc": "./audio/23.webm",
+    "style": "通勤",
+    "playList": "工作用",
+    "poster": "./img/23.png"
+  },
+  {
+    "id": 24,
+    "songName": "ダリ",
+    "songArtist": "Reol",
+    "songArtistImg": "./img/A21.png",
+    "songSrc": "./audio/24.webm",
+    "style": "健身",
+    "playList": "電死人",
+    "poster": "./img/24.png"
+  },
+  {
+    "id": 25,
+    "songName": "炎",
+    "songArtist": "LiSA",
+    "songArtistImg": "./img/A2.png",
+    "songSrc": "./audio/25.webm",
+    "style": "難過憂愁",
+    "playList": "工作用",
+    "poster": "./img/25.png"
+  },
+  {
+    "id": 26,
+    "songName": "sukidakara",
+    "songArtist": "Yuika",
+    "songArtistImg": "./img/A22.png",
+    "songSrc": "./audio/26.webm",
+    "style": "浪漫愛情",
+    "playList": "純享受",
+    "poster": "./img/26.png"
+  },
+  {
+    "id": 27,
+    "songName": "Spiral",
+    "songArtist": "LONGMAN",
+    "songArtistImg": "./img/A23.png",
+    "songSrc": "./audio/27.webm",
+    "style": "專注",
+    "playList": "遊戲音樂",
+    "poster": "./img/27.png"
+  },
+  {
+    "id": 28,
+    "songName": "Absolute Zero",
+    "songArtist": "natori",
+    "songArtistImg": "./img/A24.png",
+    "songSrc": "./audio/28.webm",
+    "style": "通勤",
+    "playList": "純享受",
+    "poster": "./img/28.png"
+  },
+  {
+    "id": 29,
+    "songName": "完全感覚Dreamer",
+    "songArtist": "ONE OK ROCK",
+    "songArtistImg": "./img/A25.png",
+    "songSrc": "./audio/29.webm",
+    "style": "能量",
+    "playList": "遊戲音樂",
+    "poster": "./img/29.png"
+  },
+  {
+    "id": 30,
+    "songName": "Cry Baby",
+    "songArtist": "Official髭男dism",
+    "songArtistImg": "./img/A26.png",
+    "songSrc": "./audio/30.webm",
+    "style": "健身",
+    "playList": "純享受",
+    "poster": "./img/30.png"
+  },
+  {
+    "id": 31,
+    "songName": "Ms.CONTROL",
+    "songArtist": "Reol",
+    "songArtistImg": "./img/A21.png",
+    "songSrc": "./audio/31.webm",
+    "style": "派對",
+    "playList": "電死人",
+    "poster": "./img/31.png"
+  },
+  {
+    "id": 32,
+    "songName": "Last Dance",
+    "songArtist": "Eve",
+    "songArtistImg": "./img/A1.png",
+    "songSrc": "./audio/32.webm",
+    "style": "派對",
+    "playList": "純享受",
+    "poster": "./img/32.png"
+  },
+  {
+    "id": 33,
+    "songName": "KICK BACK",
+    "songArtist": "Kenshi Yonezu",
+    "songArtistImg": "./img/A9.png",
+    "songSrc": "./audio/33.webm",
+    "style": "通勤",
+    "playList": "遊戲音樂",
+    "poster": "./img/33.png"
+  },
+  {
+    "id": 34,
+    "songName": "三原色",
+    "songArtist": "YOASOBI",
+    "songArtistImg": "./img/A4.png",
+    "songSrc": "./audio/34.mp4",
+    "style": "放鬆",
+    "playList": "純享受",
+    "poster": "./img/34.png"
+  },
+  {
+    "id": 35,
+    "songName": "Okinimesumama",
+    "songArtist": "Eve",
+    "songArtistImg": "./img/A1.png",
+    "songSrc": "./audio/35.webm",
+    "style": "睡眠",
+    "playList": "純享受",
+    "poster": "./img/35.png"
+  },
+  {
+    "id": 36,
+    "songName": "R.I.P.",
+    "songArtist": "ReoNa",
+    "songArtistImg": "./img/A27.png",
+    "songSrc": "./audio/36.webm",
+    "style": "睡眠",
+    "playList": "純享受",
+    "poster": "./img/36.png"
+  },
+  {
+    "id": 37,
+    "songName": "唱 - Show",
+    "songArtist": "Ado",
+    "songArtistImg": "./img/A3.png",
+    "songSrc": "./audio/37.webm",
+    "style": "能量",
+    "playList": "純享受",
+    "poster": "./img/37.png"
+  },
+  {
+    "id": 38,
+    "songName": "第六感",
+    "songArtist": "Reol",
+    "songArtistImg": "./img/A21.png",
+    "songSrc": "./audio/38.webm",
+    "style": "派對",
+    "playList": "電死人",
+    "poster": "./img/38.png"
+  },
+  {
+    "id": 39,
+    "songName": "絆ノ奇跡 - Kizuna No Kiseki",
+    "songArtist": "Milet",
+    "songArtistImg": "./img/A7.png",
+    "songSrc": "./audio/39.webm",
+    "style": "專注",
+    "playList": "日文流行",
+    "poster": "./img/39.png"
+  }
+]

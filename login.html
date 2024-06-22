@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="bgImg" src="./img/login_bg.webp">
+    <div id="logInSection">
+        <div id="logo">
+            <img src="./img/Logo.png">
+        </div>
+        <div id="infoContainer">
+            <div id="account">
+                <span>帳號</span>
+                <input type="text" placeholder="電子信箱或使用者名稱" value="abc@gmail.com" required>
+            </div>
+            <div id="password">
+                <span>密碼</span>
+                <input type="password" placeholder="密碼" value="12345678" required>
+            </div>
+            <div id="rememberMe">
+                <input type="checkbox" id="rememberMeBox">
+                <label for="rememberMeBox">記住我</label>
+            </div>
+            <div id="logInButton">
+                <!-- <button onclick=""><a href="https://www.google.com" target="_blank"></a>登入</button> -->
+                <button onclick="window.location.href=`home.html`">登入</button>
+            </div>
+            <div id="logInFooter">
+                <span>尚未註冊帳號？&nbsp;&nbsp;</span><a href="">註冊</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
